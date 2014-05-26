@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+  Bootstrap 
+    link(href='stylesheets/bootstrap.css', rel='stylesheet', media='screen')
+    link(href='mysite.css', rel='stylesheet', media='screen')
+    script(type='text/javascript', src='javascripts/jquery.js')
+    script(type='text/javascript', src='javascripts/bootstrap.min.js')
+  body
+  //
+       Navigation Bar 
+    .bodykinda
+      .navbar.navbar-default
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='http://nodejs.org/')
+            | NodeJs
+        .navbar-collapse.collapse.navbar-responsive-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href='home') Home
+        .col-lg-0
+           .panel.panel-default
+        .panel-body
+          | Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+         p      
+            Current Version: v0.10.28
+         p
+
+         .col-lg-0
+           .panel.panel-default
+        .panel-body
+          | Node's goal is to provide an easy way to build scalable network programs.
+         
+         .col-lg-0
+           .panel.panel-default
+        .panel-body
+          | In the "hello world" web server example below, many client connections can be handled concurrently. Node tells the operating system that it should be notified when a new connection is made, and then it goes to sleep. If someone new connects, then it executes the callback. Each connection is only a small heap allocation.
+         p
+
+         .col-lg-0
+            .panel.panel-default                
+                .panel-body
+                   div.imagetable
+                        img(src='./images/helloWorld.png')
+
+         .col-lg-0
+           .panel.panel-default
+        .panel-body
+          | This is in contrast to today's more common concurrency model where OS threads are employed. Thread-based networking is relatively inefficient and very difficult to use. 
+          Node will show much better memory efficiency under high-loads than systems which allocate 2mb thread stacks for each connection. Furthermore, users of Node are free from worries of dead-locking the process—there are no locks. Almost no function in Node directly performs I/O, so the process never blocks. Because nothing blocks, less-than-expert programmers are able to develop fast systems.

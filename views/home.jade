@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title NodeJs
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    //
+       Bootstrap CSS 
+    link(href='stylesheets/bootstrap.css', rel='stylesheet', media='screen')
+    link(href='mysite.css', rel='stylesheet', media='screen')
+    script(type='text/javascript', src='javascripts/jquery.js')
+    script(type='text/javascript', src='javascripts/bootstrap.min.js')
+  body
+  //
+       Navigation Bar 
+    .bodykinda
+      .navbar.navbar-default
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#')
+            | Basic website made with Node, Express, Bootstrap and Jade = JavaScrip Everywhere!
+        .navbar-collapse.collapse.navbar-responsive-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href='#') Home
+            li
+              a(href='about') About
+      //
+        Navigation Bar 
+    .jumbotron
+
+      p
+        | New approach to build nextGen enterprise applications.
+      p
+        div.imagetable
+                        img(src='./images/JSEverywhere.png')
+      p
+        | With SSJS platforms which are built over JavaScript runtime can be used for easily building fast, scalable network based applications. It uses an event-driven, non-blocking I/O model that makes the server lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices. Today many enterprises like LinkedIn, Ebay, Yahoo and many others srely on such frameworks.
+      p
+       a.btn.btn-primary.btn-lg(href='whatnode') What is NodeJs?
+
+       a.btn.btn-primary.btn-lg(href='whatexpress') What is Express? 
+      
