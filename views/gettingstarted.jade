@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+  Bootstrap 
+    link(href='stylesheets/bootstrap.css', rel='stylesheet', media='screen')
+    link(href='mysite.css', rel='stylesheet', media='screen')
+    script(type='text/javascript', src='javascripts/jquery.js')
+    script(type='text/javascript', src='javascripts/bootstrap.min.js')
+  body
+  //
+       Navigation Bar 
+    .bodykinda
+      .navbar.navbar-default
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='http://expressjs.com/guide.html')
+            | To get started
+        .navbar-collapse.collapse.navbar-responsive-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href='home') Home
+        .col-lg-0
+           .panel.panel-default
+        .panel-body
+          | Node.js: http://nodejs.org/#download
+
+        .col-lg-0
+           .panel.panel-default
+        .panel-body
+          | npm, a package manager for Node: curl http://npmjs.org/install.sh | sh
+            
+
+        .col-lg-0
+           .panel.panel-default
+        .panel-body
+          | Use npm to install Connect and Express for Node: npm install connect && npm install express
+            
+        

@@ -3,12 +3,8 @@
  * Module dependencies.
  */
 
-var express = require('express');
-var home = require('./routes/home');
-var about = require('./routes/about');
-var whatnode = require('./routes/whatnode');
-var whatexpress = require('./routes/whatexpress');
-var gettingstarted = require('./routes/gettingstarted');
+var express = require('express')
+  , routes = require('./routes');
 
 var app = module.exports = express.createServer();
 
@@ -33,13 +29,7 @@ app.configure('production', function(){
 
 // Routes
 
-
-app.get('/', home.home);
-app.get('/home', home.home);
-app.get('/about', about.about);
-app.get('/whatnode', whatnode.whatnode);
-app.get('/whatexpress', whatexpress.whatexpress);
-app.get('/gettingstarted', gettingstarted.gettingstarted);
+app.get('/', routes.index);
 
 app.listen(3000, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

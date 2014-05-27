@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+  Bootstrap 
+    link(href='stylesheets/bootstrap.css', rel='stylesheet', media='screen')
+    link(href='mysite.css', rel='stylesheet', media='screen')
+    script(type='text/javascript', src='javascripts/jquery.js')
+    script(type='text/javascript', src='javascripts/bootstrap.min.js')
+  body
+  //
+       Navigation Bar 
+    .bodykinda
+      .navbar.navbar-default
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='http://expressjs.com/')
+            | Express
+        .navbar-collapse.collapse.navbar-responsive-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href='home') Home
+        .col-lg-0
+           .panel.panel-default
+        .panel-body
+          | Web framework working on top of node.js
+
+        .col-lg-0
+           .panel.panel-default
+        .panel-body
+          | High Performance
+        
+        .col-lg-0
+           .panel.panel-default
+        .panel-body
+          | Template engines support (jade, ejs).
+
+        .col-lg-0
+           .panel.panel-default
+        .panel-body
+          | CSS engines support (sass, less, stylus)
+
+         .jumbotron
+              p
+              | Create an express application.
+              p 
+                 div.imagetable
+                        img(src='./images/express1.png')
+          
